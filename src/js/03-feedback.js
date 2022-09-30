@@ -44,5 +44,5 @@ function onSubmitForm (e) {
 }
 
 updateForm();
-formEl.addEventListener('input', throttle(onInptForm, wait=500));
+formEl.addEventListener('input', throttle(onInptForm, [wait=500]));
 formEl.addEventListener('submit', onSubmitForm);
