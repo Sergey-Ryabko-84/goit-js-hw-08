@@ -1,5 +1,4 @@
-// import throttle from 'lodash.throttle';
-const throttle = require('lodash.throttle');
+import throttle from 'lodash.throttle';
 
 const save = (key, value) => {
     try {
@@ -46,5 +45,4 @@ function onSubmitForm (e) {
 
 updateForm();
 formEl.addEventListener('input', throttle(onInptForm, 500));
-// formEl.addEventListener('input', onInptForm);
 formEl.addEventListener('submit', onSubmitForm);
