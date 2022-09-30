@@ -36,7 +36,7 @@ player.setCurrentTime(load(LOCAL_STORAGE_KEY)).then(function(seconds) {
     }
 });
 
-player.on('timeupdate', throttle(saveTime, [wait=1000]));
+player.on('timeupdate', throttle(saveTime, 1000));
 
 function saveTime ({seconds}) {
     save(LOCAL_STORAGE_KEY, seconds);
